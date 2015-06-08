@@ -62,7 +62,7 @@ static std::vector<std::string> split(const std::string& s, char delim) {
  *  @param whitespace : The type of whitespace to remove.
  *  @return The trimmed string.
  */
-std::string trim(const std::string& str, const std::string& whitespace = " \t") {
+static std::string trim(const std::string& str, const std::string& whitespace = " \t") {
     const size_t strBegin = str.find_first_not_of(whitespace);
     if (strBegin == std::string::npos)
         return ""; // no content
